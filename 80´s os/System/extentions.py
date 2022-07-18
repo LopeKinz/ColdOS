@@ -12,7 +12,7 @@ try:
     selection = pick(options, title, indicator='=>', default_index=0)
     assert len(selection) == 1
     option, index = selection[0]
-    os.system("python Extentions/" + option)
+    os.system("python System/Extentions/" + option)
 except Exception as e:
     print(e)
     input("Press Enter to continue...")

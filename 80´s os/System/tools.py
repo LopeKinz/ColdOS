@@ -12,4 +12,4 @@ option, index = selection[0]
 if option == "PinkyDiscordSpammer (Free)":
     webbrowser.open("https://github.com/LopeKinz/PinkyDiscordSpammer")
 if option == "Exit":
-    os.system("python main_menu.py")
+    os.system("python System/main_menu.py")

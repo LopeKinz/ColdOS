@@ -27,13 +27,13 @@ try:
             option, index = selection[0]
             try:
                     if option == "Tools":
-                        os.system("python tools.py")
+                        os.system("python System/tools.py")
                     if option == "Extentions":
-                        os.system("python extentions.py")
+                        os.system("python System/extentions.py")
                     if option == "Settings":
-                        os.system("python settings.py")
+                        os.system("python System/settings.py")
                     if option == "Shutdown":
-                        os.system("python shutdown.py")
+                        os.system("python System/shutdown.py")
             except Exception as e:
                     print(e)
                     input("Press Enter to continue...")
@@ -45,15 +45,15 @@ try:
             option, index = selection[0]
             try:
                 if option == "Tools":
-                    os.system("python tools.py")
+                    os.system("python System/tools.py")
                 if option == "Extentions":
-                    os.system("python extentions.py")
+                    os.system("python System/extentions.py")
                 if option == "Settings":
-                    os.system("python settings.py")
+                    os.system("python System/settings.py")
                 if option == "Shutdown":
-                    os.system("python shutdown.py")
+                    os.system("python System/shutdown.py")
                 if option == "Debug":
-                    os.system("python debug.py")
+                    os.system("python System/debug.py")
             except Exception as e:
                 print(e)
                 input("Press Enter to continue...")
@@ -69,13 +69,13 @@ try:
             option, index = selection[0]
             try:
                     if option == "Tools":
-                        os.system("python tools.py")
+                        os.system("python System/tools.py")
                     if option == "Extentions":
-                        os.system("python extentions.py")
+                        os.system("python System/extentions.py")
                     if option == "Settings":
-                        os.system("python settings.py")
+                        os.system("python System/settings.py")
                     if option == "Shutdown":
-                        os.system("python shutdown.py")
+                        os.system("python System/shutdown.py")
             except Exception as e:
                     print(e)
                     input("Press Enter to continue...")
@@ -87,19 +87,19 @@ try:
             option, index = selection[0]
             try:
                 if option == "Tools":
-                    os.system("python tools.py")
+                    os.system("python System/tools.py")
                 if option == "Extentions":
-                    os.system("python extentions.py")
+                    os.system("python System/extentions.py")
                 if option == "Settings":
-                    os.system("python settings.py")
+                    os.system("python System/settings.py")
                 if option == "Shutdown":
-                    os.system("python shutdown.py")
+                    os.system("python System/shutdown.py")
                 if option == "Debug":
-                    os.system("python debug.py")
+                    os.system("python System/debug.py")
             except Exception as e:
                 print(e)
                 input("Press Enter to continue...")
 except Exception as e:
     print(e)
     input("Press Enter to continue...")
-    sys.exit()
+    
