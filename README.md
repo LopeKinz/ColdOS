@@ -50,7 +50,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-ColdOS is a Huge Toolbox and Designed Like a 80´s Operating System
+ColdOS is a Huge Toolbox and Designed Like a 80´s Operating System.
+
+Note! Its in Alpha State!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
