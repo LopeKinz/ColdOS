@@ -6,7 +6,7 @@ Build = "Stable" # Build of the program
 Mode = "Debug" # Mode of the program
 Type = "Normal" # Type of the program
 
-print("ColdOS " + Version + " " + Build + " " + Mode + " " + Type) # Printing the version of the program
+print(f"ColdOS {Version} {Build} {Mode} {Type}")
 print("") # Printing a blank line
 input("Press Enter to continue...") # Waiting for the user to press enter
 os.system("cls") # Clearing the screen

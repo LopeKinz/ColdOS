@@ -13,18 +13,19 @@ def clr():
     
 def getLisencekey():
     if os.name == 'nt':
-        hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
-        return hwid
+        return (
+            subprocess.check_output('wmic csproduct get uuid')
+            .decode()
+            .split('\n')[1]
+            .strip()
+        )
     else:
         return("Error while getting Windows HWID")
     
 def checkhwid():
-        res = requests.get('https://pastebin.com/raw/sZ123VPy')
-        hwid = getLisencekey()
-        if hwid in res.text:
-            return True
-        else:
-            return False
+    res = requests.get('https://pastebin.com/raw/sZ123VPy')
+    hwid = getLisencekey()
+    return hwid in res.text
 
 uuid = getLisencekey()
 checkhwid()
@@ -34,7 +35,7 @@ if checkhwid() == True:
 elif checkhwid() == False:
     print("You are not licensed to use this software")
     print("Please buy a license from https://developing.sellix.io/")
-    print("Your HWID is: " + uuid)
+    print(f"Your HWID is: {uuid}")
     print("After Purshase, Create a ticket on https://discord.gg/8gSPukwg6C")
     time.sleep(99999)
 else:
@@ -44,7 +45,7 @@ else:
 slowprint("Booting ColdOS...", 0.05)
 time.sleep(0.5)
 slowprint(f"Ram = {psutil.virtual_memory()}", 0.05)
-slowprint(f"Starting Up...", 0.05)
+slowprint("Starting Up...", 0.05)
 time.sleep(5)
 clr()
 try:
